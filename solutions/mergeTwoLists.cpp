@@ -67,7 +67,6 @@ public:
                 l1curr = l1curr->next;
                 prev->next = curr;
                 prev = curr;
-
             }
             else 
             {
