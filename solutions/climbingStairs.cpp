@@ -18,14 +18,14 @@ public:
         if (n <= 1)
             return n;
 
-        int b = 2;
+        //int b = 2;
         int prevOnes = 1;
         int perm = 2;
-        while (b != n)
+        for (int i = 2; i < n; ++i)// (b != n)
         {
             perm = perm + prevOnes;
             prevOnes = perm - prevOnes;
-            b++;
+            //b++;
         }
         return perm;
     }
@@ -36,7 +36,7 @@ int main()
     Solution sol;
 
     int n = 3;
-    int ans = sol.climbStairs(1);
+    int ans = sol.climbStairs(8);
 
     cout << "ans: " << ans << endl;
 
