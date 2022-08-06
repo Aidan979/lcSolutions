@@ -3,9 +3,6 @@
 #include <Thread>
 #include <mutex>
 #include <condition_variable>
-#include <atomic>
-
-//using namespace std;
 
 class FizzBuzz {
 private:
@@ -74,4 +71,5 @@ int main()
     D.join();
 
     std::cout << "done" << std::endl;
+    return 0;
 }
