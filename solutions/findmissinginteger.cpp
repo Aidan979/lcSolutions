@@ -1,6 +1,7 @@
 #include <iostream>
 #include <vector>
 #include <unordered_set>
+#include <algorithm>
 // Write a function:
 
 // class Solution { public int solution(int[] A); }  
@@ -45,7 +46,7 @@ public:
 int main()
 {
     Solution sol;
-    vector<int> v = {1,5,6,4,1,2};
+    vector<int> v = {1,4,8,4,7,2,3,9};
     int ans = sol.solve(v);
     cout << ans << endl;
 
